@@ -1,0 +1,39 @@
+ul.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100px;
+    flex-basis: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+ul.main li{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+ul.main li a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.side-menu{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 100px;
+    background-color: black;
+}
+p{
+    color: #FFF;
+    padding: 20px;
+}

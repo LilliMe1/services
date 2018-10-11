@@ -1,0 +1,28 @@
+<ul class="main">
+  <li>
+    <a routerLink="./">
+    Home
+  </a>
+  </li>
+  <li *ngFor="let menu of menus">
+    <a  (click)="toggleSubmenu(menu.label, menu.children)">
+      {{menu.label}}
+    </a>
+  </li>
+
+  
+</ul>
+
+
+<div class="side-menu" *ngIf="showSubmenu">
+  <p>
+    {{submenuTitle}}
+  </p>
+  <ul>
+      <li *ngFor="let menu of childMenu" (click)="showSubmenu = false">
+        <a routerLink="{{menu.path}}">
+          {{menu.label}}
+        </a>
+      </li>
+  </ul>
+</div>
