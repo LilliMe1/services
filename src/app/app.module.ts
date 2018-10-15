@@ -10,8 +10,7 @@ import { SolMod } from './solutions/sol.mod';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LpComponent,    
-  ],
+    LpComponent  ],
   imports: [
     BrowserModule,
     SolMod,

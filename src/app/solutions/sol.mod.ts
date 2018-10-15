@@ -7,10 +7,14 @@ import { RouterModule } from "@angular/router";
 import { AutomitiveComponent } from "./automitive/automitive.component";
 import { CommonModule } from "@angular/common";
 import { MobileComponent } from "../products/mobile/mobile.component";
+import { DataService } from "../data.service";
+import { RpieComponent } from "../rpie/rpie.component";
 
 
 @NgModule({
-    declarations: [HcComponent, SolutionsComponent, MobileComponent, AutomitiveComponent, IotComponent, McComponent],
+    declarations: [HcComponent, 
+      RpieComponent,
+      SolutionsComponent, MobileComponent, AutomitiveComponent, IotComponent, McComponent],
     imports: [
         
         CommonModule,
@@ -37,7 +41,8 @@ import { MobileComponent } from "../products/mobile/mobile.component";
               }
             ]
           }
-    ])]
+    ])],
+    providers: [DataService]
 })
 export class SolMod{
 

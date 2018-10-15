@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../../data.service';
 @Component({
   selector: 'app-hc',
   templateUrl: './hc.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HcComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private d: DataService
+  ) { }
 
   ngOnInit() {
   }
